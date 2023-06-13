@@ -1,0 +1,10 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.icon {
+	svg {
+		&:hover path {
+			fill: $primary1;
+		}
+	}
+}

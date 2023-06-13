@@ -1,0 +1,18 @@
+@import 'src/styles/variables';
+
+
+@mixin flex-horizontal-center {
+	display: flex;
+	align-items: center;
+}
+@mixin flex-content-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin flex-between-center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+

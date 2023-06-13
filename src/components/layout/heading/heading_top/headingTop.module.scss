@@ -1,0 +1,52 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-color: $Heading;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		background-color: $Heading;
+		position: relative;
+		padding: 46px 0;
+
+		.logo {
+			@include flex-horizontal-center;
+
+			p {
+				font-weight: 600;
+				font-size: 30px;
+				line-height: 1.36;
+				padding: 0 3px;
+			}
+		}
+		.time {
+			display: flex;
+
+			.block {
+				@include flex-horizontal-center;
+
+				padding: 0 5px;
+
+				.svg {
+					@include flex-content-center;
+					width: 63px;
+					height: 63px;
+					border-radius: 50%;
+					background: #111c55;
+					border: 1px solid #273270;
+				}
+				p {
+					margin-left: 17px;
+				}
+				a {
+					margin-left: 17px;
+
+					&:hover {
+						border-color: $primary1;
+					}
+				}
+			}
+		}
+	}
+}

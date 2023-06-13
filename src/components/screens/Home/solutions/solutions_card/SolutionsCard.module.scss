@@ -1,0 +1,31 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	display: flex;
+	max-width: 391px;
+
+	.svg {
+		margin-right: 16px;
+	}
+
+	.text {
+		border-left: 1px solid #d8d8d8;
+		padding: 0px 4px 0 25px;
+
+		h1 {
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			color: $textDark;
+		}
+
+		p {
+			font-family: $кrub;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 151.52%;
+			color: #666c89;
+		}
+	}
+}

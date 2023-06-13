@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;500&display=swap');
+@import './variables';
+@import './reset';
+
+input,
+button,
+body {
+	font-family: $rubik;
+	overflow-x: hidden;
+}
+
+body {
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+input {
+	font-size: 16px;
+	background-color: transparent;
+}
+
+a {
+	text-decoration: none;
+	transition: border-color 0.3s ease-in-out;
+	border-bottom: 1px solid transparent;
+	animation: drawing 0.4s;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+@import './keyframes';
+
+h1{
+	font-family: $rubik;
+}
+
+.container{
+	max-width: 1190px;
+	padding: 0 5px;
+	margin: 0 auto;
+	position: relative;
+	color: $Secondary1;
+}

@@ -1,0 +1,44 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/heading.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 875px;
+	.content {
+		display: flex;
+		flex-direction: column;
+		max-width: 571px;
+		margin: 175px 0 24px 0;
+	
+
+
+		.label {
+			@include flex-content-center;
+			max-width: 247px;
+			max-height: 23px;
+			background-color: rgba(0, 0, 0, 0.1); /* Прозрачный цвет фона */
+			font-size: 14px;
+			border-left: $primary1 2px solid;
+			padding: 3px 9px;
+			margin-bottom: 8px;
+		}
+
+		.title {
+			font-family: $rubik;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 71px;
+			margin-bottom: 6px;
+		}
+
+		.text {
+			font-family: $кrub;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 151.52%;
+		}
+	}
+}

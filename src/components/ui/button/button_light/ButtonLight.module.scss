@@ -1,0 +1,51 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.btn {
+	position: relative;
+	margin: auto;
+	padding: 19px 22px;
+	transition: all 0.2s ease;
+	color: black;
+	background: $Gradient;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 30px;
+		right: -24px;
+		display: block;
+		border-radius: 50%;
+		background: #fff;
+		width: 56px;
+		height: 56px;
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		&:before {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: -40px;
+			right: -50px;
+			background: #fff;
+		}
+	}
+	span {
+		position: relative;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 900;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+		vertical-align: middle;
+	}
+
+	&:active {
+		position: relative;
+		top: 2px;
+		left: 0;
+	}
+}
