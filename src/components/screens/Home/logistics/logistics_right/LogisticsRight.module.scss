@@ -1,0 +1,20 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.right {
+	position: relative;
+
+	.minImg {
+		display: inline-block;
+		position: relative;
+		bottom: 169px;
+		left: -122px;
+		background-color: #fff;
+		padding: 30px 30px 0 0;
+
+		img {
+			max-width: 272px;
+			max-height: 195px;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.logistics {
+	padding-top: 366px;
+	background-image: url('/images/image/backgroundLogist.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 504px;
+	width: 100%;
+	
+
+	.contents {
+		background-color: #fff;
+		color: $textDark;
+		.content {
+			display: flex;
+			max-width: 1021px;
+			margin: 0 auto;
+			padding: 85px 10px 0 10px;
+
+			.left {
+				display: inline-block;
+				max-width: 472px;
+				margin-right: 30px;
+
+				.logo {
+					display: inline-block;
+					padding: 3px 8px;
+					background: rgba(232, 232, 232, 0.5);
+					border-left: $primary1 4px solid;
+					margin-bottom: 12px;
+				}
+
+				.label {
+					font-weight: 600;
+					font-size: 35px;
+					line-height: 41px;
+					color: $textDark;
+					margin-bottom: 12px;
+				}
+
+				.text {
+					text-align: left;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 151.52%;
+					color: #666c89;
+					margin-bottom: 25px;
+				}
+
+				.icons {
+					@include flex-column-center;
+
+					.svg {
+						@include flex-horizontal-center;
+						margin-bottom: 22px;
+						.image {
+							@include flex-content-center;
+							width: 58px;
+							height: 58px;
+							border-radius: 50%;
+							background: $Gradient;
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

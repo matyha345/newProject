@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+
+
+.wrapper {
+	display: inline-block;
+    max-width: 290px;
+    padding: 3px 8px;
+    background: rgba(232, 232, 232, 0.5);
+    position: relative;
+    margin-bottom: 12px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        background: $Gradient;
+    }
+}

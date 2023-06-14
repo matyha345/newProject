@@ -1,12 +1,15 @@
+import { Children } from 'react'
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
 import ButtonLight from '../../ui/button/button_light/ButtonLight'
+import Slide from '../../ui/slide/Slide'
+import Tags from '../../ui/tags/Tags'
 import styles from './Home.module.scss'
+import Logistics from './logistics/logistics'
 import Solutions from './solutions/Solutions'
+import Transporting from './transporting/Transporting'
 
-
-
-function App() {
+function Home() {
 	return (
 		<>
 			<HeadingTop />
@@ -14,7 +17,9 @@ function App() {
 				<HeadingBottom />
 				<div className='container'>
 					<div className={styles.content}>
-						<p className={styles.label}>Logistics & Supply Chain Solutions</p>
+						<Tags customStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }}>
+							Logistics & Supply Chain Solutions
+						</Tags>
 						<h1 className={styles.title}>
 							Your Gateway to any Destination in the World
 						</h1>
@@ -29,13 +34,12 @@ function App() {
 				</div>
 			</header>
 
-			<section className={styles.solution}>
-				<div className='container'>
-					<Solutions />
-				</div>
-			</section>
+			<Solutions />
+			<Logistics />
+			<Transporting />
+			<Slide />
 		</>
 	)
 }
 
-export default App
+export default Home
