@@ -1,14 +1,14 @@
 import styles from '../IconsWhite.module.scss'
 
-const Twitter = () => {
+const Twitter = ({ customStyle }) => {
 	return (
 		<>
-			<a className={styles.icon} href='#'>
+			<a style={customStyle} className={styles.icon} href='#'>
 				<svg
 					width='20'
 					height='16'
 					viewBox='0 0 20 16'
-					fill='none'
+					fill='fill'
 					xmlns='http://www.w3.org/2000/svg'
 				>
 					<path

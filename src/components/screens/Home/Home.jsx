@@ -8,6 +8,8 @@ import styles from './Home.module.scss'
 import Logistics from './logistics/logistics'
 import Solutions from './solutions/Solutions'
 import Transporting from './transporting/Transporting'
+import AirTransport from './air_transport/airTransport'
+import TeamHome from './team/TeamHome'
 
 function Home() {
 	return (
@@ -38,6 +40,8 @@ function Home() {
 			<Logistics />
 			<Transporting />
 			<Slide />
+			<AirTransport />
+			<TeamHome />
 		</>
 	)
 }

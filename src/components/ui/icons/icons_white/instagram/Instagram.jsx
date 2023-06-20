@@ -1,9 +1,9 @@
 import styles from '../IconsWhite.module.scss'
 
-const Instagram = () => {
+const Instagram = ({customStyle}) => {
 	return (
 		<>
-			<a className={styles.icon} href='#'>
+			<a style={customStyle} className={styles.icon} href='#'>
 				<svg
 					width='20'
 					height='20'

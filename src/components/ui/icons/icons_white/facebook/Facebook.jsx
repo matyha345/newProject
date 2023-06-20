@@ -1,9 +1,9 @@
 import styles from '../IconsWhite.module.scss'
 
-const Facebook = () => {
+const Facebook = (customStyle) => {
 	return (
 		<>
-			<a className={styles.icon} href='#'>
+			<a style={customStyle} className={styles.icon} href='#'>
 				<svg
 					width='22'
 					height='20'
