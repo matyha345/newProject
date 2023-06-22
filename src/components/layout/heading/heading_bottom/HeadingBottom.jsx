@@ -12,11 +12,11 @@ const HeadingBottom = () => {
 					<div className={styles.bottom}>
 						<ul className={styles.link}>
 							<li>
-								<a href='#'>Home</a>
+								<a href='/'>Home</a>
 								<span></span>
 							</li>
 							<li>
-								<a href='#'>About</a>
+								<a href='/about-us'>About</a>
 								<span></span>
 							</li>
 							<li>

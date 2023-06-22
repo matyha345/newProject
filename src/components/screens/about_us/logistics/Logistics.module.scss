@@ -1,0 +1,31 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+
+.wrapper{
+    padding: 100px 0;
+    background-color: #F4F4F4;
+
+    .content{
+        color: $textDark;
+
+        @include flex-columnBetweenCenter-center;
+
+
+        .title{
+            margin-bottom: 55px;
+        }
+        .services{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 185px;
+            row-gap: 50px;
+
+            .card{
+                max-width: 270px;
+            }
+        }
+    }
+}

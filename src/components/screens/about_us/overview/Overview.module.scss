@@ -1,0 +1,84 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	margin: 100px 0;
+
+	.content {
+		display: flex;
+		color: $textDark;
+
+		.images {
+			position: relative;
+
+			.imgOne {
+				position: relative;
+			}
+
+			.imgMini {
+				position: absolute;
+				bottom: -20px;
+				right: -40px;
+			}
+		}
+
+		.research {
+			width: 555px;
+			margin-left: 100px;
+
+			@include flex-columnBetween-center;
+			.title {
+				color: $textDark;
+				font-size: 35px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+
+			.text {
+				color: #666c89;
+				font-size: 16px;
+				font-family: $кrub;
+				font-weight: 500;
+				line-height: 151.523%;
+				margin-bottom: 15px;
+			}
+
+			.buttons {
+				width: 100%;
+				@include flex-between-center;
+				margin-bottom: 27px;
+				.btn {
+					width: 192px;
+					height: 60px;
+					margin-right: 14px;
+
+					// color: #fff;
+
+					font-size: 19px;
+					font-family: Krub;
+					font-weight: 600;
+					line-height: 151.523%;
+					background-color: #F4F4F4;
+
+					transition: all 0.03s ease-in-out;
+
+					&:hover {
+						transform: scale(1.05);
+					}
+				}
+				.btn:nth-child(1) {
+					background-color: $primary1;
+				}
+			}
+
+			.texts {
+				color: #666c89;
+				font-size: 16px;
+				font-family: Krub;
+				font-weight: 500;
+				line-height: 151.523%;
+				margin-bottom: 35px;
+			}
+		}
+	}
+}
