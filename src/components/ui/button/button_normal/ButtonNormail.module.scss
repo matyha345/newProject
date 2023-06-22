@@ -1,0 +1,12 @@
+@import 'src/styles/variables';
+
+.btn {
+	padding: 16px 36px;
+	color: $textDark;
+	background: $Gradient;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color: $Secondary1;
+    }
+}

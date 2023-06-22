@@ -1,0 +1,15 @@
+
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+
+.logo {
+    @include flex-horizontal-center;
+
+    p {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.36;
+        padding: 0 3px;
+    }
+}

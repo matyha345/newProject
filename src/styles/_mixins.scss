@@ -5,11 +5,15 @@
 	display: flex;
 	align-items: center;
 }
+
+
 @mixin flex-content-center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
+
 @mixin flex-between-center {
 	display: flex;
 	align-items: center;
@@ -27,6 +31,8 @@
 	align-items: center;
 	justify-content: space-between;
 }
+
+
 @mixin flex-columnBetween-center {
 	display: flex;
 	flex-direction: column;

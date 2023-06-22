@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.about {
+	margin-top: 39px;
+	margin-right: 35px;
+}
+.list {
+	font-size: 16px;
+	font-family: Krub;
+	font-weight: 500;
+	line-height: 250%;
+	transition: all 0.3s ease-in-out;
+	a {
+		&:hover {
+			color: $primary1;
+		}
+	}
+}
+
+.utility {
+	margin-top: 39px;
+	margin-right: 35px;
+}

@@ -13,6 +13,7 @@ const TeamHome = () => {
 		'/images/image/person/team3.jpg'
 	]
 	const title = ['Jessca Arow', 'Kathleen Smith', 'Rebecca Tylor']
+	
 
 	return (
 		<div className={styles.wrapper}>

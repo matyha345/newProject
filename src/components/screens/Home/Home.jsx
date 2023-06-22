@@ -1,4 +1,3 @@
-import { Children } from 'react'
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
 import ButtonLight from '../../ui/button/button_light/ButtonLight'
@@ -10,6 +9,9 @@ import Solutions from './solutions/Solutions'
 import Transporting from './transporting/Transporting'
 import AirTransport from './air_transport/airTransport'
 import TeamHome from './team/TeamHome'
+import Contact from './contact/Contact'
+import Blog from './blog/Blog'
+import Footer from '../../layout/footer/Footer'
 
 function Home() {
 	return (
@@ -42,6 +44,9 @@ function Home() {
 			<Slide />
 			<AirTransport />
 			<TeamHome />
+			<Contact />
+			<Blog />
+			<Footer />
 		</>
 	)
 }

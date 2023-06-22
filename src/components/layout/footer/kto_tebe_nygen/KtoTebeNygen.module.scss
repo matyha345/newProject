@@ -1,0 +1,32 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.daDaItoKtoTebeNygen {
+    padding: 15px 0 18px 0;
+	@include flex-between-center;
+
+	ul {
+		display: flex;
+
+		li {
+			margin-right: 38px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+			a {
+                font-family: $кrub;
+                font-size: 16px;
+				font-weight: 500;
+				line-height: 250%;
+                color: #8388A7;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: $Secondary1;
+                }
+			}
+		}
+	}
+}

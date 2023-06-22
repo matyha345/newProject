@@ -1,0 +1,70 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.bottom {
+	display: flex;
+
+	.images {
+		position: relative;
+		img {
+			position: relative;
+		}
+
+		p {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.one {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			&::before {
+				content: '';
+				display: block;
+				margin-right: 10px;
+				background: url('/images/svg/contact/Star.svg');
+				width: 51.61px;
+				height: 51.61px;
+			}
+		}
+
+		.three {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23px;
+			&::before {
+				content: '';
+				display: block;
+
+				background: url('/images/svg/contact/three.svg');
+				width: 47.37px;
+				height: 47.37px;
+			}
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 121px;
+				right: 50px;
+				background: url('/images/svg/contact/lain.svg');
+				width: 57.53px;
+				height: 13.17px;
+			}
+		}
+
+		.four {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 26px;
+
+			
+		}
+	}
+}

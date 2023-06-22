@@ -1,0 +1,56 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-color: rgba(225, 225, 225, 0.3); /* Прозрачный цвет фона */
+	backdrop-filter: blur(2px); /* Размытие фона */
+
+	.top {
+		@include flex-between-center;
+
+		.logo {
+			padding: 43px 171px 34px 45px;
+			background-color: $btnDark;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				transform: scale(1.01);
+			}
+		}
+
+		ul {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			li {
+				&:nth-child(1){
+					margin-left: 54px;
+				}
+
+				&:nth-child(2){
+					margin-left: 15px;
+				}
+
+				&:nth-child(3){
+					padding-right: 180px;
+				}
+				a {
+					color: #fff;
+					font-size: 25px;
+					font-weight: 500;
+
+					// transition: all 0.3s ease-in-out;
+
+					// &:hover {
+					// 	color: $primary1;
+					// }
+				}
+			}
+		}
+	}
+}
