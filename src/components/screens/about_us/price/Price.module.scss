@@ -1,0 +1,25 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	margin: 100px 0;
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		color: $textDark;
+
+		.label {
+			font-size: 35px;
+			font-weight: 600;
+			margin-bottom: 64px;
+		}
+
+		.pricing {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

@@ -34,7 +34,7 @@ function Home() {
 							lectus.
 						</p>
 					</div>
-					<ButtonLight />
+					<ButtonLight>Explore More</ButtonLight>
 				</div>
 			</header>
 

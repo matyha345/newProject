@@ -50,7 +50,7 @@ const Contact = () => {
 							maxLength='100'
 						></textarea>
 						<div className={styles.button}>
-							<ButtonLight />
+							<ButtonLight>Submit Message</ButtonLight>
 						</div>
 					</form>
 				</div>

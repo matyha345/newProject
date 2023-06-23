@@ -1,0 +1,55 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+
+
+.blok {
+    margin-right: 30px;
+    padding: 61px 50px;
+    background-color: #f4f4f4;
+
+    &:nth-child(2){
+        color: #f4f4f4;
+        background-color: $btnDark;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .inner {
+        margin-bottom: 50px;
+        .title {
+            text-align: center;
+            font-size: 30px;
+
+            font-weight: 500;
+        }
+
+        .number {
+            font-size: 22px;
+            margin-bottom: 50px;
+            span {
+                font-size: 85px;
+                font-weight: 500;
+            }
+        }
+
+        .top {
+            text-align: center;
+            padding: 17px 0;
+            border-top: #d6d6d6 1px solid;
+        }
+        p {
+            text-align: center;
+            padding: 17px 0;
+            border-bottom: #d6d6d6 1px solid;
+        }
+    }
+    .btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

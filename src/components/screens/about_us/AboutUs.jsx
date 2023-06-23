@@ -1,10 +1,14 @@
+import Footer from '../../layout/footer/Footer'
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
+import Slide from '../../ui/slide/Slide'
 import Tags from '../../ui/tags/Tags'
+import TeamHome from '../Home/team/TeamHome'
 
 import styles from './AboutUs.module.scss'
 import Logistics from './logistics/Logistics'
 import Overview from './overview/Overview'
+import Price from './price/Price'
 
 const AboutUs = () => {
 	return (
@@ -26,7 +30,17 @@ const AboutUs = () => {
 			</header>
 
 			<Overview />
-            <Logistics />
+			<Logistics />
+
+			<section className={styles.team}>
+				<TeamHome />
+			</section>
+
+			
+
+			<Slide />
+			<Price />
+			<Footer />
 		</>
 	)
 }

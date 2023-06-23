@@ -52,7 +52,7 @@ const Overview = () => {
 							voluptassit.
 						</div>
 						<div className={styles.bottom}>
-							<ButtonDark />
+							<ButtonDark>Learn More</ButtonDark>
 						</div>
 					</div>
 				</div>

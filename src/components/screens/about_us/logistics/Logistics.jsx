@@ -1,5 +1,7 @@
 import Tags from '../../../ui/tags/Tags'
 import styles from './Logistics.module.scss'
+import LogisticsCard from './logistics_cards/LogisticsCard'
+import { logisticsProduct } from './logistics_cards/LogisticsCards'
 import svgOneAbout from './logistics_cards/svg/ship.svg'
 
 const Logistics = () => {
@@ -12,78 +14,16 @@ const Logistics = () => {
 					<h1 className={styles.title}>Our Logistics Services</h1>
 
 					<div className={styles.services}>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<div className={styles.top}>
-								<img src={svgOneAbout} alt='#' />
-							</div>
-							<div className={styles.bottom}>
-								<h1>Sea Transport Services</h1>
-								<p>
-									Following the quality of our service thus having gained trust
-									of our many clients.
-								</p>
-							</div>
-						</div>
+						{logisticsProduct.map((scr, logistic) => {
+							return (
+								<LogisticsCard
+									key={logistic}
+									svg={scr.svg}
+									title={scr.title}
+									text={scr.text}
+								/>
+							)
+						})}
 					</div>
 				</div>
 			</div>

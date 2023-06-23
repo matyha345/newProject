@@ -75,7 +75,7 @@ const Blog = () => {
 							</div>
 						</div>
 					))}
-					<ButtonDark />
+					<ButtonDark>More Work</ButtonDark>
 				</div>
 			</div>
 		</section>

@@ -1,10 +1,10 @@
 import styles from './ButtonDark.module.scss'
 
-const ButtonDark = () => {
+const ButtonDark = ({children}) => {
 	return (
 		<>
 			<button className={styles.btn}>
-				<span>Button Style</span>
+				<span>{children}</span>
 			</button>
 		</>
 	)
