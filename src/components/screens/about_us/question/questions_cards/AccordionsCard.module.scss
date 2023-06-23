@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+
+.accordion {
+    .accHead {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .accBody {
+        color: #666c89;
+        font-size: 16px;
+        font-family: $кrub;
+        font-weight: 500;
+        line-height: 151.523%;
+        margin-bottom: 40px;
+    }
+}

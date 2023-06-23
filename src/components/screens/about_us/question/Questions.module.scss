@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	position: relative;
+	.background {
+		background-image: url('/images/image/about/questions.jpg');
+		width: 582px;
+		height: 439px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.content {
+		@include flex-horizontal-center;
+		color: $textDark;
+		margin: 125px 0;
+
+		.left {
+			max-width: 681px;
+			margin-right: 71px;
+
+			.title {
+				max-width: 300px;
+				color: $textDark;
+				font-size: 35px;
+				font-weight: 600;
+				margin-bottom: 50px;
+			}
+
+			
+		}
+
+		.right {
+			max-width: 448px;
+			padding: 52px 62px;
+			background-color: $Heading;
+			color: $Secondary1;
+		}
+	}
+}

@@ -9,6 +9,7 @@ import styles from './AboutUs.module.scss'
 import Logistics from './logistics/Logistics'
 import Overview from './overview/Overview'
 import Price from './price/Price'
+import Questions from './question/Questions'
 
 const AboutUs = () => {
 	return (
@@ -40,6 +41,7 @@ const AboutUs = () => {
 
 			<Slide />
 			<Price />
+			<Questions />
 			<Footer />
 		</>
 	)
