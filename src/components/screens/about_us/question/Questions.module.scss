@@ -3,12 +3,13 @@
 
 .wrapper {
 	position: relative;
+	
 	.background {
 		background-image: url('/images/image/about/questions.jpg');
 		width: 582px;
 		height: 439px;
 		position: absolute;
-		top: 0;
+		top: 30px;
 		right: 0;
 	}
 
@@ -37,6 +38,17 @@
 			padding: 52px 62px;
 			background-color: $Heading;
 			color: $Secondary1;
+
+			.inner{
+				margin-bottom: 23px;
+			}
+
+			.label{
+				margin-bottom: 21px;
+			}
+			.time{
+				margin-bottom: 26px;
+			}
 		}
 	}
 }

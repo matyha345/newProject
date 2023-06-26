@@ -1,19 +1,38 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins.scss';
 
+.accordionStyles {
+	width: 600px;
+	height: 300px;
+}
 
 .accordion {
-    .accHead {
-        font-size: 20px;
-        margin-bottom: 18px;
-    }
+	
+	.titleStyles {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		transition: all 0.3s ease-in-out;
+	}
 
-    .accBody {
-        color: #666c89;
-        font-size: 16px;
-        font-family: $кrub;
-        font-weight: 500;
-        line-height: 151.523%;
-        margin-bottom: 40px;
-    }
+	.accHead {
+		font-size: 20px;
+		font-family: Rubik;
+	}
+
+	.accBody {
+		color: #666c89;
+		font-size: 16px;
+		font-family: $кrub;
+		font-weight: 500;
+		line-height: 151.523%;
+        transition: all 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+	}
+      .accBody.active {
+        max-height: 1000px;
+      }
+    	
 }

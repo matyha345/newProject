@@ -1,22 +1,7 @@
-
-
 import { useState } from 'react'
 import styles from './AccordionsCard.module.scss'
-
-const accordionStyles = { maxWidth: '600px' }
-
-const accordionTitleStyles = {
-	display: 'flex',
-	justifyContent: 'space-between',
-	cursor: 'pointer',
-	padding: '5px',
-	background: '#21aeca'
-}
-
-const accordionContentStyles = {
-	padding: '5px',
-	background: '#39b9d2'
-}
+import { FiChevronRight } from 'react-icons/fi'
+import { FiChevronDown } from 'react-icons/fi'
 
 const Accordions = ({
 	section,
@@ -32,13 +17,23 @@ const Accordions = ({
 	return (
 		<>
 			<div className={styles.accordion}>
-				<div style={accordionTitleStyles} onClick={toggleSection}>
+				<div className={styles.titleStyles} onClick={toggleSection}>
 					<div className={styles.accHead}>{section.title}</div>
-					<div>{isActiveSection ? '-' : '+'}</div>
+					<div className={styles.arrow}>
+						{isActiveSection ? (
+							<FiChevronDown color='#ffbe34' fontSize={30} />
+						) : (
+							<FiChevronRight  fontSize={30} />
+						)}
+					</div>
 				</div>
-				{isActiveSection && (
-					<div className={styles.accBody}>{section.dataText}</div>
-				)}
+				<div
+					className={`${styles.accBody} ${
+						isActiveSection ? styles.active : ''
+					}`}
+				>
+					<div className={styles.content}>{section.dataText}</div>
+				</div>
 			</div>
 		</>
 	)
@@ -48,7 +43,7 @@ const Accordion = ({ sections }) => {
 	const [activeIndex, setActiveIndex] = useState(0)
 
 	return (
-		<div style={accordionStyles}>
+		<div className={styles.accordionStyles}>
 			{sections.map((section, index) => (
 				<Accordions
 					section={section}
