@@ -13,16 +13,17 @@
 			@include flex-horizontal-center;
 
 			li {
-				a {
+				display: flex;
+
+				
+				.inner {
 					padding: 0 30px;
 					&:hover {
-						border-color: $primary1;
+						border-bottom: 1px solid $primary1;
 					}
 				}
-
 				span {
 					border-right: 1px solid rgba(255, 255, 255, 0.2);
-					transform: rotate(-90deg);
 				}
 			}
 		}
@@ -49,7 +50,7 @@
 					width: 100%;
 					height: 100%;
 					transition: all 0.3s ease;
-					
+
 					&:hover {
 						color: $primary1;
 					}

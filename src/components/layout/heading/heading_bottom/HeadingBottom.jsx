@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
 import Facebook from '../../../ui/icons/icons_white/facebook/facebook'
 import Instagram from '../../../ui/icons/icons_white/instagram/instagram'
 import Linkedin from '../../../ui/icons/icons_white/linkedin/Linkedin'
 import Twitter from '../../../ui/icons/icons_white/twitter/Twitter'
 import styles from './HeadingBottom.module.scss'
+import Hamburger from './hamburger/Hamburger'
 
 const HeadingBottom = () => {
 	return (
@@ -12,23 +14,33 @@ const HeadingBottom = () => {
 					<div className={styles.bottom}>
 						<ul className={styles.link}>
 							<li>
-								<a href='/'>Home</a>
+								<div className={styles.inner}>
+									<Link to={'/'}>Home</Link>
+								</div>
 								<span></span>
 							</li>
 							<li>
-								<a href='/about-us'>About</a>
+								<div className={styles.inner}>
+									<Link to={'/about-us'}>About</Link>
+								</div>
 								<span></span>
 							</li>
 							<li>
-								<a href='#'>Pages</a>
+								<div className={styles.inner}>
+									<Hamburger />
+								</div>
 								<span></span>
 							</li>
 							<li>
-								<a href='#'>Project</a>
+								<div className={styles.inner}>
+									<Link to={'#'}>Project</Link>
+								</div>
 								<span></span>
 							</li>
 							<li>
-								<a href='#'>Contact</a>
+								<div className={styles.inner}>
+									<Link to={'#'}>Contact</Link>
+								</div>
 								<span></span>
 							</li>
 						</ul>

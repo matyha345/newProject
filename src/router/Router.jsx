@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // import NotFound from '../components/screens/not-found/NotFound'
 import { routes } from './routes.data'
 import ScrollToTop from '../components/utils/scrollToTop'
+import NotFound from '../components/screens/not_found/NotFound'
 
 
 
@@ -19,7 +20,7 @@ const Router = () => {
 						/>
 					)
 				})}
-				{/* <Route path='*' element={<NotFound />} /> */}
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>
 	)

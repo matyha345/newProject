@@ -14,9 +14,4 @@ export const routes = [
 		component: AboutUs
 		// auth: false
 	},
-	// {
-	// 	path: '/product/:id',
-	// 	component: ProductGeneration
-	// 	// auth: false
-	// }
 ]

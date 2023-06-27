@@ -1,0 +1,47 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	position: relative;
+
+	.btn {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.menu {
+		position: absolute;
+		top: calc(100% + 8px);
+		right: -35px;
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: 10px 12px;
+		font-size: 16px;
+		display: none;
+		animation: opacity 0.4s;
+		z-index: $zIdex10;
+		&.show {
+			display: block;
+		}
+
+		.menuMap {
+			list-style: none;
+
+			.inner {
+				margin-bottom: 10px;
+				.links {
+					border: none;
+					color: $Secondary1;
+					text-decoration: none;
+					transition: color 0.2s ease;
+
+					&:hover,
+					&.active {
+						color: $primary1;
+						transform: scale(1.04);
+					}
+				}
+			}
+		}
+	}
+}
