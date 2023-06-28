@@ -5,11 +5,11 @@ export const  menu = [
         link: '/services'
     },
     {
-        title: 'ServicesSingle',
+        title: 'Services Single',
         link: '/single'
     },
     {
-        title: 'ProjectSingle',
+        title: 'Project Single',
         link: '/project_single'
     },
     {
@@ -17,7 +17,7 @@ export const  menu = [
         link: '/blog'
     },
     {
-        title: 'BlogSingle',
+        title: 'Blog Single',
         link: '/blog_single'
     },
     {

@@ -1,4 +1,5 @@
-import Tags from '../tags/Tags'
+
+import Tags from '../../ui/tags/Tags'
 import styles from './Slide.module.scss'
 import img1 from './slidecard/images/image/photo1.jpg'
 import img2 from './slidecard/images/image/photo2.jpg'

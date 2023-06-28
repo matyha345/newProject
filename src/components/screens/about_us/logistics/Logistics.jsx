@@ -4,7 +4,7 @@ import LogisticsCard from './logistics_cards/LogisticsCard'
 import { logisticsProduct } from './logistics_cards/LogisticsCards'
 import svgOneAbout from './logistics_cards/svg/ship.svg'
 
-const Logistics = () => {
+const Logistics = ({children}) => {
 	return (
 		<section className={styles.wrapper}>
 			<div className='container'>
@@ -26,6 +26,7 @@ const Logistics = () => {
 						})}
 					</div>
 				</div>
+				{children}
 			</div>
 		</section>
 	)

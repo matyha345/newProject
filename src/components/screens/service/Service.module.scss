@@ -2,14 +2,14 @@
 @import 'src/styles/mixins.scss';
 
 .wrapper {
-	background-image: url('/images/image/background_about_us.jpg');
+	background-image: url('/images/image/BackgroundService.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 497px;
+	height: 419px;
 
 	.content {
-		margin-top: 119px;
+		margin-top: 122px;
 		@include flex-column-center;
 
 		.title {
@@ -17,16 +17,11 @@
 			font-size: 60px;
 			font-weight: 700;
 		}
-
 	}
+    
+    
 }
-.team{
-	margin-top: 100px;
-}
-
-.contact{
-	margin: 80px 0;
-	@include flex-content-center;
-	color: #fff;
-	
+.buttonInner{
+    margin-top: 55px;
+    display: flex;
 }

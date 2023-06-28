@@ -11,6 +11,7 @@
 	}
 
 	.menu {
+		width: 150px;
 		position: absolute;
 		top: calc(100% + 8px);
 		right: -35px;
@@ -30,6 +31,7 @@
 			.inner {
 				margin-bottom: 10px;
 				.links {
+					width: 100%;
 					border: none;
 					color: $Secondary1;
 					text-decoration: none;

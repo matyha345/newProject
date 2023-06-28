@@ -1,7 +1,9 @@
 import Footer from '../../layout/footer/Footer'
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
-import Slide from '../../ui/slide/Slide'
+import Slide from '../../layout/slide/Slide'
+import ContactBottom from '../../ui/contact_bottom/ContactBottom'
+
 import Tags from '../../ui/tags/Tags'
 import TeamHome from '../Home/team/TeamHome'
 
@@ -37,11 +39,12 @@ const AboutUs = () => {
 				<TeamHome />
 			</section>
 
-			
-
 			<Slide />
 			<Price />
 			<Questions />
+			<section className={styles.contact}>
+				<ContactBottom />
+			</section>
 			<Footer />
 		</>
 	)

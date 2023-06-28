@@ -1,7 +1,7 @@
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
 import ButtonLight from '../../ui/button/button_light/ButtonLight'
-import Slide from '../../ui/slide/Slide'
+
 import Tags from '../../ui/tags/Tags'
 import styles from './Home.module.scss'
 import Logistics from './logistics/logistics'
@@ -12,6 +12,7 @@ import TeamHome from './team/TeamHome'
 import Contact from './contact/Contact'
 import Blog from './blog/Blog'
 import Footer from '../../layout/footer/Footer'
+import Slide from '../../layout/slide/Slide'
 
 function Home() {
 	return (

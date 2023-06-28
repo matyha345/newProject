@@ -6,6 +6,7 @@ import img2 from '/images/image/contact2.jpg'
 import img3 from '/images/image/contact3.jpg'
 
 const ContactBottom = () => {
+
 	return (
 		<>
 			<div className={styles.bottom}>

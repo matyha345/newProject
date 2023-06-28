@@ -5,7 +5,7 @@ const FooterAbout = () => {
 		<>
 			<ul className={styles.about}>
 				<li className={styles.list}>
-					<a href='#' className={styles.list}>
+					<a href='/about-us' className={styles.list}>
 						About Us
 					</a>
 				</li>

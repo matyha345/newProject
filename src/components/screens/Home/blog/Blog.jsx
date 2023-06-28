@@ -47,6 +47,8 @@ const Blog = () => {
 								</div>
 								<div className={styles.lain}></div>
 								<div className={styles.time}>
+
+									
 									{index === 0 && (
 										<>
 											<h2 className={styles.title}>{path.title}</h2>
