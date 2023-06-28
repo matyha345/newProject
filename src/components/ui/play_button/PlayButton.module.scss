@@ -5,9 +5,9 @@
 .box {
 	position: relative;
 
-	.video-play-button {
+	.btn {
 		position: absolute;
-		z-index: 10;
+		z-index: $zIdex10;
 		top: 50%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
@@ -20,10 +20,9 @@
 		padding: 20px 20px 20px 20px;
 
 		&::before {
-
 			content: '';
 			position: absolute;
-			z-index: 0;
+			z-index: $zIdex1;
 			left: 50%;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
@@ -39,7 +38,7 @@
 		&::after {
 			content: '';
 			position: absolute;
-			z-index: 1;
+			z-index: $zIdex1;
 			left: 50%;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
@@ -58,17 +57,16 @@
 			background-color: darken($primary1, 10%);
 		}
 	}
-	.video-play-button span {
+	.btn span {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		z-index: 50;
+		z-index: $zIdex10;
 		color: black;
 		font-size: 42px;
 
 		&::before {
-
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -78,12 +76,10 @@
 			background-color: #fff;
 			width: 72px;
 			height: 72px;
-			z-index: -1;
+			z-index: $zIdex-1;
 			border-radius: 50%;
-
-			
 		}
-		
+
 		// &:hover{
 		// 	color: $primary1;
 		// }
