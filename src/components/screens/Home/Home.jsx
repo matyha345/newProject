@@ -13,6 +13,8 @@ import Contact from './contact/Contact'
 import Blog from './blog/Blog'
 import Footer from '../../layout/footer/Footer'
 import Slide from '../../layout/slide/Slide'
+import OurLatestNews from '../../ui/blog_card/OurLatestNews'
+import ButtonDark from '../../ui/button/button_dark/ButtonDark'
 
 function Home() {
 	return (
@@ -46,7 +48,10 @@ function Home() {
 			<AirTransport />
 			<TeamHome />
 			<Contact />
-			<Blog />
+			<Blog
+				children={<OurLatestNews visibleCount={3} />}
+				buttonBottom={<ButtonDark>More Work</ButtonDark>}
+			/>
 			<Footer />
 		</>
 	)

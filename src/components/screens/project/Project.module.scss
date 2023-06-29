@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/project.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 497px;
+
+	.content {
+		margin-top: 159px;
+		@include flex-column-center;
+
+		.title {
+			color: #fff;
+			font-size: 60px;
+			font-weight: 700;
+		}
+	}
+}
+.images {
+    margin: 100px 0;
+	
+
+    .boxImage{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    
+	
+}

@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/project.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 497px;
+
+	.content {
+		margin-top: 159px;
+		@include flex-column-center;
+
+		.title {
+			color: #fff;
+			font-size: 60px;
+			font-weight: 700;
+		}
+	}
+}

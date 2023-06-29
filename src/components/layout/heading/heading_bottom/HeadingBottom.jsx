@@ -33,7 +33,7 @@ const HeadingBottom = () => {
 							</li>
 							<li>
 								<div className={styles.inner}>
-									<Link to={'#'}>Project</Link>
+									<Link to={'/project'}>Project</Link>
 								</div>
 								<span></span>
 							</li>
