@@ -1,37 +1,36 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins.scss';
 
+
 .wrapper {
 	@include flex-content-center;
+	max-width: 1021px;
 	width: 1021px;
 	margin: 0 auto;
 	height: 100%;
-
-	.inner {
-		.content {
-			@include flex-horizontal-center;
-			padding: 50px;
-			border-width: 1px 0 1px 0;
-			border-style: solid;
-			border-color: #d5d5d5;
-
-			div {
-				font-weight: 600;
-				font-size: 50px;
-				line-height: 59px;
-				color: $textDark;
-			}
-
-			> span {
-				width: 17px;
-				height: 17px;
-				background: $Gradient;
-				margin: 0 16px;
-			}
-
-			p {
-				max-width: 155px;
-			}
+	.content {
+		@include flex-horizontal-center;
+		padding: 46px 85px;
+		border-width: 1px 0 1px 0;
+		border-style: solid;
+		border-color: #d5d5d5;
+		div {
+			font-weight: 600;
+			font-size: 50px;
+			line-height: 59px;
+			color: $textDark;
 		}
+
+		span {
+			width: 17px;
+			height: 17px;
+			background: $Gradient;
+			margin: 0 16px;
+		}
+	}
+	> span {
+		min-height: 153px;
+		display: inline-block;
+		border: 1px solid #d5d5d5;
 	}
 }
