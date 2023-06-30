@@ -6,14 +6,39 @@ import { BsFacebook } from 'react-icons/bs'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 
-const TeamHome = () => {
+const TeamHome = ({ visibleCount, children}) => {
 	const imgPaths = [
 		'/images/image/person/team1.jpg',
 		'/images/image/person/team2.jpg',
-		'/images/image/person/team3.jpg'
+		'/images/image/person/team3.jpg',
+		'/images/image/person/team4.jpg',
+		'/images/image/person/team5.jpg',
+		'/images/image/person/team6.jpg'
 	]
-	const title = ['Jessca Arow', 'Kathleen Smith', 'Rebecca Tylor']
-	
+	const title = [
+		'Jessca Arow',
+		'Kathleen Smith',
+		'Rebecca Tylor',
+		'Ria Jackson',
+		'Kane William',
+		'Lisara Tylor'
+	]
+
+	const socialMediaIcons = [
+		{
+			icon: <AiOutlineTwitter fill='black' fontSize='23' />,
+			condition: [0, 1, 3, 4]
+		},
+		{
+			icon: <BsFacebook fill='black' fontSize='23' />,
+			condition: [0, 1, 2, 3, 4, 5]
+		},
+		{
+			icon: <AiOutlineInstagram fill='black' fontSize='23' />,
+			condition: [0, 1, 2, 3, 4, 5]
+		},
+		{ icon: <AiFillLinkedin fill='black' fontSize='23' />, condition: [1] }
+	]
 
 	return (
 		<div className={styles.wrapper}>
@@ -24,7 +49,7 @@ const TeamHome = () => {
 
 					<div className={styles.cards}>
 						<div className={styles.card}>
-							{imgPaths.map((card, index) => (
+							{imgPaths.slice(0, visibleCount).map((card, index) => (
 								<div className={styles.person} key={index}>
 									<div className={styles.images}>
 										<img src={card} alt='#' />
@@ -32,67 +57,19 @@ const TeamHome = () => {
 									<div className={styles.names}>
 										<div className={styles.name}>
 											<h2>{title[index]}</h2>
-											<p>Designer</p>
+											<p>{children[index]}</p>
 										</div>
 										<ul className={styles.icons}>
-											{index === 0 && (
-												<>
-													<li>
-														<a href='#'>
-															<AiOutlineTwitter fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<BsFacebook fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<AiOutlineInstagram fill='black' fontSize='23' />
-														</a>
-													</li>
-												</>
-											)}
-											{index === 1 && (
-												<>
-													<li>
-														<a href='#'>
-															<AiFillLinkedin fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<AiOutlineTwitter fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<BsFacebook fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<AiOutlineInstagram fill='black' fontSize='23' />
-														</a>
-													</li>
-												</>
-											)}
-
-											{index === 2 && (
-												<>
-													<li>
-														<a href='#'>
-															<BsFacebook fill='black' fontSize='23' />
-														</a>
-													</li>
-													<li>
-														<a href='#'>
-															<AiOutlineInstagram fill='black' fontSize='23' />
-														</a>
-													</li>
-												</>
-											)}
+											{socialMediaIcons.map((item, index) => {
+												if (item.condition.includes(index)) {
+													return (
+														<li key={`__i${index}`}>
+															<a href='#'>{item.icon}</a>
+														</li>
+													)
+												}
+												return null
+											})}
 										</ul>
 									</div>
 								</div>

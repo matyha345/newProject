@@ -1,15 +1,16 @@
+
 @import 'src/styles/variables';
 @import 'src/styles/mixins.scss';
 
 .wrapper {
-	background-image: url('/images/image/project_single.jpg');
+	background-image: url('/images/image/team_bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 495px;
+	height: 430px;
 
 	.content {
-		margin-top: 159px;
+		margin-top: 162px;
 		@include flex-column-center;
 
 		.title {
@@ -18,4 +19,10 @@
 			font-weight: 700;
 		}
 	}
+    
+    
+}
+
+.teamWrapper{
+    margin: 100px 0;
 }

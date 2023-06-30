@@ -17,6 +17,7 @@ import OurLatestNews from '../../ui/blog_card/OurLatestNews'
 import ButtonDark from '../../ui/button/button_dark/ButtonDark'
 
 function Home() {
+	const yourArray = ['Designer']
 	return (
 		<>
 			<HeadingTop />
@@ -46,7 +47,7 @@ function Home() {
 			<Transporting />
 			<Slide />
 			<AirTransport />
-			<TeamHome />
+			<TeamHome visibleCount={3}>{yourArray}</TeamHome>
 			<Contact />
 			<Blog
 				children={<OurLatestNews visibleCount={3} />}

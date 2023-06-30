@@ -1,0 +1,85 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.aside {
+	.categories {
+		display: flex;
+		flex-direction: column;
+		padding: 46px 42px;
+		background-color: #f5f5f5;
+		margin-bottom: 46px;
+
+		.titleAside {
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 30px;
+		}
+
+		.textAside {
+			@include flex-between-center;
+			margin-bottom: 19px;
+			border-bottom: 1px solid #d6d6d6;
+
+			.label {
+				color: #666c89;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+			.number {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.blog {
+		display: flex;
+		flex-direction: column;
+		padding: 46px 42px;
+		background-color: #f5f5f5;
+		margin-bottom: 46px;
+
+		.blogTitle {
+			font-size: 22px;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 12px;
+		}
+
+		.blogText {
+			color: #666c89;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 130.5%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.bgBottom {
+		padding: 35px 45px;
+		background-color: $primary2;
+		color: $Secondary1;
+
+		.help {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 24px;
+		}
+
+		span {
+            display: block;
+            width: 100%;
+			border: 1px solid #1D2342;
+		}
+
+        .email{
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+	}
+}

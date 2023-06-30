@@ -16,12 +16,19 @@
 		}
 
 		.cards {
+
+			
+
 			.card {
 				width: 100%;
-				@include flex-between-center;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				column-gap: 40px;
+				row-gap: 30px;
 
 				.person {
-					margin-right: 54px;
+					// margin-right: 54px;
 
 					&:last-child {
 						margin-right: 0;

@@ -1,0 +1,13 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	margin: 100px 0;
+
+	.content {
+		display: flex;
+		color: $textDark;
+
+
+	}
+}
