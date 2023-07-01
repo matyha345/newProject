@@ -1,0 +1,26 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.icons {
+	width: 100%;
+	@include flex-between-center;
+    align-items: normal;
+
+	.icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		.iconSvg {
+			@include flex-content-center;
+
+			width: 63px;
+			height: 63px;
+			background-color: #273270;
+			border-radius: 50%;
+
+            margin-bottom: 10px;
+		}
+	}
+}

@@ -39,7 +39,7 @@ const HeadingBottom = () => {
 							</li>
 							<li>
 								<div className={styles.inner}>
-									<Link to={'#'}>Contact</Link>
+									<Link to={'/contact'}>Contact</Link>
 								</div>
 								<span></span>
 							</li>

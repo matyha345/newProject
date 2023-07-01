@@ -3,6 +3,8 @@ import styles from './AccordionsCard.module.scss'
 import { FiChevronRight } from 'react-icons/fi'
 import { FiChevronDown } from 'react-icons/fi'
 
+
+
 const Accordions = ({
 	section,
 	isActiveSection,
@@ -23,7 +25,7 @@ const Accordions = ({
 						{isActiveSection ? (
 							<FiChevronDown color='#ffbe34' fontSize={30} />
 						) : (
-							<FiChevronRight  fontSize={30} />
+							<FiChevronRight fontSize={30} />
 						)}
 					</div>
 				</div>

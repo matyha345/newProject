@@ -1,5 +1,3 @@
-import ButtonLight from '../../ui/button/button_light/ButtonLight'
-import Logo from '../../ui/logo/Logo'
 import HeadingEmail from '../heading/heading_top/heading_icons/HeadingEmail'
 import HeadingPhone from '../heading/heading_top/heading_icons/HeadingPhone'
 import styles from './Footer.module.scss'
@@ -13,10 +11,9 @@ import ButtonNormal from '../../ui/button/button_normal/ButtonNormail'
 import FooterAbout from './footer_about/FooterAbout'
 
 const Footer = () => {
-
 	const myCustomStyle = {
-		marginRight: '30px',
-	  };
+		marginRight: '30px'
+	}
 	return (
 		<footer className={styles.wrapper}>
 			<FooterTop />

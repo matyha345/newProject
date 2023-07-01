@@ -14,6 +14,11 @@ import Price from './price/Price'
 import Questions from './question/Questions'
 
 const AboutUs = () => {
+	const designer = [
+		'Designer',
+		'Designer',
+		'Designer',
+	]
 	return (
 		<>
 			<HeadingTop />
@@ -36,7 +41,7 @@ const AboutUs = () => {
 			<Logistics />
 
 			<section className={styles.team}>
-				<TeamHome />
+				<TeamHome visibleCount={3} children={designer} />
 			</section>
 
 			<Slide />

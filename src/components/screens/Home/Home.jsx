@@ -17,7 +17,7 @@ import OurLatestNews from '../../ui/blog_card/OurLatestNews'
 import ButtonDark from '../../ui/button/button_dark/ButtonDark'
 
 function Home() {
-	const yourArray = ['Designer']
+	const yourArray = ['Designer','Designer','Designer']
 	return (
 		<>
 			<HeadingTop />

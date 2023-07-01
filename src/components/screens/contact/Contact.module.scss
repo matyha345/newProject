@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/contact_main.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 497px;
+	.content {
+		display: flex;
+		flex-direction: column;
+		max-width: 571px;
+		margin: 175px 0 24px 0;
+	
+
+
+		.title {
+			font-family: $rubik;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 71px;
+			margin-bottom: 6px;
+		}
+
+		.text {
+			font-family: $кrub;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 151.52%;
+		}
+	}
+}

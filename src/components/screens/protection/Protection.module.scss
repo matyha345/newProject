@@ -1,0 +1,59 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/protection.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 444px;
+
+	.content {
+		margin-top: 139px;
+		@include flex-column-center;
+
+		.title {
+			font-size: 60px;
+			font-weight: 700;
+		}
+	}
+}
+
+.password {
+	margin: 100px 0;
+
+	.contentInner {
+		background-color: $primary2;
+
+		.box {
+			width: 100%;
+			@include flex-content-center;
+			flex-direction: column;
+			padding: 126px 0;
+
+			.title {
+				text-align: center;
+				font-size: 35px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 116%;
+				margin-bottom: 42px;
+			}
+
+			.inputs{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				max-width: 500px;
+				height: 60px;
+
+				input{
+					padding: 21px 119px 21px 30px;
+					border: 1px solid #999;
+
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+}

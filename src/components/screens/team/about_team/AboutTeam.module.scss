@@ -1,0 +1,74 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	margin: 100px 0 50px 0;
+
+	.content {
+		@include flex-horizontal-center;
+		color: $textDark;
+
+		.main {
+			margin-right: 60px;
+		}
+
+		.article {
+			max-width: 500px;
+
+			.title {
+				font-size: 35px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				margin-bottom: 10px;
+			}
+
+			.text {
+				color: #666c89;
+				font-size: 16px;
+				font-family: $кrub;
+				font-weight: 500;
+				line-height: 151.523%;
+				margin-bottom: 20px;
+			}
+
+			span {
+				display: block;
+				width: 100%;
+
+				border: 1px solid #d6d6d6;
+
+				margin-bottom: 20px;
+			}
+
+			.blockIcons {
+				width: 100%;
+				@include flex-between-center;
+
+				.svg {
+					margin-bottom: 10px;
+				}
+
+				.svgTitle {
+					font-size: 25px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+                    margin-bottom: 10px;
+				}
+
+				.svgText {
+					color: #666c89;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 151.523%;
+				}
+			}
+		}
+	}
+
+	.contact{
+		margin: 50px 0 100px 0;
+	}
+}

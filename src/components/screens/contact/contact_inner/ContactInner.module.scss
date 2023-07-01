@@ -1,0 +1,50 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	margin: 100px 0 50px 0;
+
+	.wrapperInner {
+		max-width: 954px;
+		padding: 100px 98px;
+		background-color: $primary2;
+		margin: 0 auto;
+
+		.content {
+			width: 100%;
+			@include flex-columnBetweenCenter-center;
+
+			.title {
+				text-align: center;
+				font-size: 35px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				margin-bottom: 10px;
+			}
+
+			.text {
+				text-align: center;
+				font-size: 16px;
+				font-family: $кrub;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 151.523%;
+				margin-bottom: 40px;
+			}
+
+			.icons {
+				width: 100%;
+				margin: 40px 0 20px 0;
+			}
+
+			.forms {
+				width: 100%;
+			}
+		}
+	}
+
+	.contact {
+		margin: 50px 0;
+	}
+}

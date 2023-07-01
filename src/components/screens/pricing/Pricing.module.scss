@@ -1,0 +1,28 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+	background-image: url('/images/image/pricing_page.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 419px;
+
+	.content {
+		margin-top: 140px;
+		@include flex-column-center;
+
+		.title {
+			color: #fff;
+			font-size: 60px;
+			font-weight: 700;
+		}
+	}
+
+
+
+    .slide{
+        background-color: #F4F4F4;
+        padding: 100px 0;
+    }
+}
