@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import Facebook from '../../../ui/icons/icons_white/facebook/facebook'
-import Instagram from '../../../ui/icons/icons_white/instagram/instagram'
+import Facebook from '../../../ui/icons/icons_white/facebook/Facebook'
+import Instagram from '../../../ui/icons/icons_white/instagram/Instagram'
 import Linkedin from '../../../ui/icons/icons_white/linkedin/Linkedin'
 import Twitter from '../../../ui/icons/icons_white/twitter/Twitter'
 import styles from './HeadingBottom.module.scss'
