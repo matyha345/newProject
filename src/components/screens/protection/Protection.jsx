@@ -1,6 +1,7 @@
 import Footer from '../../layout/footer/Footer'
 import HeadingBottom from '../../layout/heading/heading_bottom/HeadingBottom'
 import HeadingTop from '../../layout/heading/heading_top/HeadingTop'
+import Slide from '../../layout/slide/Slide'
 import ButtonLight from '../../ui/button/button_light/ButtonLight'
 import Tags from '../../ui/tags/Tags'
 import styles from './Protection.module.scss'
