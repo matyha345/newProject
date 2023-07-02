@@ -15,7 +15,7 @@ import Footer from '../../layout/footer/Footer'
 import Slide from '../../layout/slide/Slide'
 import OurLatestNews from '../../ui/blog_card/OurLatestNews'
 import ButtonDark from '../../ui/button/button_dark/ButtonDark'
-import Logistics from '../about_us/logistics/Logistics'
+import Logistics from '../about_us/logistics/Logistics.jsx'
 
 function Home() {
 	const yourArray = ['Designer','Designer','Designer']
