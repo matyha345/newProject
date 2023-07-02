@@ -2,7 +2,7 @@ import Tags from '../../../ui/tags/Tags'
 import styles from './Logistics.module.scss'
 import LogisticsCard from './logistics_cards/LogisticsCard'
 import { logisticsProduct } from './logistics_cards/LogisticsCards'
-import svgOneAbout from './logistics_cards/svg/ship.svg'
+
 
 const Logistics = ({children}) => {
 	return (

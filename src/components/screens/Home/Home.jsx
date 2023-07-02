@@ -4,7 +4,7 @@ import ButtonLight from '../../ui/button/button_light/ButtonLight'
 
 import Tags from '../../ui/tags/Tags'
 import styles from './Home.module.scss'
-import Logistics from './logistics/logistics'
+
 import Solutions from './solutions/Solutions'
 import Transporting from './transporting/Transporting'
 import AirTransport from './air_transport/airTransport'
@@ -15,6 +15,7 @@ import Footer from '../../layout/footer/Footer'
 import Slide from '../../layout/slide/Slide'
 import OurLatestNews from '../../ui/blog_card/OurLatestNews'
 import ButtonDark from '../../ui/button/button_dark/ButtonDark'
+import Logistics from '../about_us/logistics/Logistics'
 
 function Home() {
 	const yourArray = ['Designer','Designer','Designer']
