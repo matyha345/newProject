@@ -7,7 +7,7 @@ import styles from './Home.module.scss'
 
 import Solutions from './solutions/Solutions'
 import Transporting from './transporting/Transporting'
-import AirTransport from './air_transport/airTransport'
+import AirTransport from './air_transport/AirTransport'
 import TeamHome from './team/TeamHome'
 import Contact from './contact/Contact'
 import Blog from './blog/Blog'
