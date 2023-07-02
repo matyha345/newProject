@@ -11,7 +11,7 @@ import 'swiper/css/a11y'
 import styles from './SlideCard.module.scss'
 
 import svg from './images/svg/quotes.svg'
-import { RiStarSFill } from 'react-icons/Ri'
+// import { RiStarSFill } from 'react-icons/ri'
 import { setCardSlideOne } from './slide_card.js'
 
 import { FiArrowRight } from 'react-icons/fi'
@@ -59,7 +59,7 @@ const SlideCard = () => {
 										<div className={styles.text}>
 											<p>{path.text}</p>
 											<div className={styles.rating}>
-												<RiStarSFill />
+												{/* <RiStarSFill /> */}
 											</div>
 										</div>
 									</div>
@@ -85,7 +85,7 @@ const SlideCard = () => {
 										<div className={styles.text}>
 											<p>{path.textTwo}</p>
 											<div className={styles.rating}>
-												<RiStarSFill />
+												{/* <RiStarSFill /> */}
 											</div>
 										</div>
 									</div>
