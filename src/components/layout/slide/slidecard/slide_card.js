@@ -1,4 +1,4 @@
-import img1 from './images/image/photo2.jpg'
+import img1 from './images/image/Photo2.jpg'
 import img2 from './images/image/photo1.jpg'
 
 export const setCardSlideOne = [
