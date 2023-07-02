@@ -1,5 +1,5 @@
 import Home from "../components/screens/Home/Home";
-import AboutUs from "../components/screens/about_us/AboutUS";
+import AboutUs from "../components/screens/about_us/AboutUs";
 import BlogPage from "../components/screens/blog_page/BlogPage";
 import BlogSingle from "../components/screens/blog_single/BlogSingle";
 import ChangeLog from "../components/screens/change_log/ChangeLog";
