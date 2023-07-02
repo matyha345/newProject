@@ -1,6 +1,6 @@
 import styles from './Details.module.scss'
 import DetailsTexts from './details_texts/DetailsTexts'
-import imgTrack from './image/image.jpg'
+import imgTrack from './image/Image.jpg'
 
 const Details = () => {
 	const title = ['Customer', 'Category', 'Date', 'Status', 'Tags']
