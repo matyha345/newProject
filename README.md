@@ -1,7 +1,6 @@
 # newProject 
-Figma 
+Figma || [Figma-Макет](https://www.figma.com/file/kMmBr5biVsUoHnt5G84qRm/myProject?type=design&node-id=1-3570&mode=design&t=GcYnxYah4Orq6qfK-0)
 
-https://www.figma.com/file/kMmBr5biVsUoHnt5G84qRm/myProject?type=design&node-id=1-3570&mode=design&t=GcYnxYah4Orq6qfK-0
 
 
 Этот сайт создан для демонстрации моих навыков на данный момент!
@@ -22,3 +21,6 @@ react-dom - Эта библиотека предоставляет методы 
 swiper - Библиотека Swiper предоставляет мощные инструменты для создания адаптивных и мобильных дружественных слайдеров (каруселей) на веб-страницах. Она упрощает создание сенсорных слайдеров с анимацией и различными эффектами перехода.
 
 
+*данный сайт не имеет мобильной версии*
+
+**На данный момент данный сайт не обладает SSL-сертификатом.**
